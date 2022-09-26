@@ -1,26 +1,94 @@
 <!DOCTYPE html>
-<html>
+<!-- Se actualiza la pagina index para que contenga nuevas etiquetas meta y demas etiquetas para la semantica del body -->
+<html lang="es">
     <head>
-        <title>TODO supply a title</title>
+        <title>Tienda en línea</title>
         <meta charset="UTF-8">
+        <meta name="description" content="Está pagina contiene etiquetas del tipo html5 y luego enlces o defincion de estilos css3">
+        <meta name="Keywords" content="html5 ,css3 , web, fidékitas ">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <a href="ejemplo9.html">Back</a>|
-           <a href="index.html">Home</a>|
-           <a href="ejemplo2.html">Next</a><br>
-              
-        <div>
-            <h1 style="text-align: center">Home </h1>
-            <p>Bienvenidos a la página de la Tienda en línea...</p>
-        </div>
+        <header id="encabezado">  <!-- Etiqueta para ofrecerle al browser info de que es un encabezado -->
+            <h1>TechShop</h1>
+        </header>
+        <nav id="menu"> <!-- esta etiqueta es para ilustrarle al browser que posiblemente es un menú -->
+            <a href="ejemplo9.html">Back</a>|
+            <a href="index.html">Home</a>|
+            <a href="ejemplo2.html">Next</a><br>
+        </nav>
+        <aside id="barralateral"> <!-- Etiqueta para indicar que es una barra lateral al final, puede ser a la izquierda o a la derecha, y pueden ser varias  -->
+            <h2> Producto más vendido" </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices pulvinar in, non elementum parturient senectus est libero commodo velit hendrerit, erat varius nisl sodales aenean aliquam per placerat netus. Tristique cras blandit mattis hendrerit etiam sociosqu platea imperdiet, dapibus donec ut massa eros morbi vulputate sollicitudin, rutrum fringilla lectus fames erat tortor orci. Vel congue vehicula curae massa auctor natoque semper lobortis, condimentum blandit interdum taciti molestie lectus platea elementum id, ad pulvinar est diam leo cum montes.</p>
+        </aside>
+        <section id="contenido">
+            <h2>Articulos principales</h2>
+            <article>
+                <header>Portatil XRT 5000</header>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ac, lacinia fames integer semper erat primis sociis habitasse facilisi, rutrum purus mollis felis ut lectus suscipit. Vivamus hac montes turpis ultrices orci massa metus nec, porta molestie purus convallis ligula lobortis ac, cubilia commodo eget dignissim nullam aenean dictumst. Dictumst tempor aptent risus fringilla fusce diam hendrerit eleifend nostra velit, metus placerat volutpat eget massa semper commodo fames imperdiet ut tempus, penatibus ullamcorper senectus quis faucibus varius nisi nascetur dis. Porta ad habitasse pulvinar sodales potenti aliquam taciti inceptos arcu enim, natoque ut vulputate quisque parturient feugiat ac felis consequat.</p>
+                <footer>Agregar al carrito</footer>
+                <figure>
+                    <img src="Images/PortatilRTX.jpg" alt="Desktop XRT"/>
+                </figure>
+            </article>
+            <article>
+                <header>Alienware ATD 9000</header>
+                <p>Está inspirada en la pelicula <cite>Aliens el octavo pasajero</cite>  Malesuada nulla nostra laoreet lacinia feugiat dictum fames, vivamus ut consequat primis nunc justo hendrerit, orci rutrum accumsan aliquet scelerisque sollicitudin. Auctor ac potenti porta mauris hendrerit phasellus nisi justo habitasse eget litora per penatibus mollis, massa imperdiet vehicula erat tempus venenatis aliquet posuere fringilla tortor rutrum leo. Tincidunt nam tempus neque vitae semper facilisis porta malesuada feugiat, morbi torquent dui viverra mattis tempor class potenti pulvinar, primis facilisi sociis pharetra nibh volutpat dictum urna. Placerat proin viverra euismod habitasse turpis nisi justo iaculis rhoncus, convallis sagittis pharetra vel mattis mus vestibulum ridiculus nibh fusce, quis eleifend fermentum nulla nascetur sapien platea dapibus. Semper nostra rutrum aliquam litora suscipit bibendum libero aenean quis torquent dis iaculis habitasse cursus molestie, orci auctor erat nascetur tristique sodales magnis scelerisque vel congue blandit vehicula praesent quisque.</p>
+                <footer>Agregar al carrito</footer>
+                <figure>
+                    <img src="Images/TarjetaVideo9000.png" alt="Alienware"/>
+                    <figcaption>Más vendido</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header>Impresora 3D portable</header>
+                <p> Ullamcorper sociosqu nunc lacinia platea aliquet eu metus montes ante dignissim bibendum facilisis rhoncus enim non sodales, lobortis cursus ridiculus cras conubia facilisi velit maecenas diam pulvinar nec et quisque quam proin. In malesuada cubilia cursus eget ante mollis ut, sed purus auctor suscipit pharetra magna nibh, quisque arcu donec neque class augue. Dictumst tellus pellentesque dictum leo accumsan eleifend sagittis auctor metus, natoque parturient enim mollis pharetra facilisi nunc torquent mus, curae vivamus lobortis porttitor gravida class felis massa.</p>
+                <footer>Agregar al carrito</footer>
+                <figure>
+                    <img src="Images/impresora3d.jpg" alt="3D print"/>
+                    <figcaption>Más económico</figcaption>
+                </figure>
+            </article>
+              <article>
+                <header>Resumen de lineas generales</header>
+                  
+                <table border="1">
+                    <thead>
+                        <tr id="encabezadoTabla">
+                            <th>Código</th>
+                            <th>Detalle</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaresumen">
+                        <tr>
+                            <td>1</td>
+                            <td>Ullamcorper sociosqu nunc lacinia platea aliquet</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>eu metus montes ante dignissim bibendum facilisis</td>
+                        </tr>
+                            <tr>
+                            <td>3</td>
+                            <td>rhoncus enim non sodales, lobortis cursus</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td> ridiculus cras conubia facilisi velit</td>
+                        </tr>
+                            <tr>
+                            <td>5</td>
+                            <td>maecenas diam pulvinar nec et quisque quam proin.</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>In malesuada cubilia cursus eget ante mollis ut, sed purus auctor suscipit</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-        <p style="text-align: left">Lorem ipsum dolor sit amet consectetur adipiscing elit ac, lacinia fames integer semper erat primis sociis habitasse facilisi, rutrum purus mollis felis ut lectus suscipit. Vivamus hac montes turpis ultrices orci massa metus nec, porta molestie purus convallis ligula lobortis ac, cubilia commodo eget dignissim nullam aenean dictumst. Dictumst tempor aptent risus fringilla fusce diam hendrerit eleifend nostra velit, metus placerat volutpat eget massa semper commodo fames imperdiet ut tempus, penatibus ullamcorper senectus quis faucibus varius nisi nascetur dis. Porta ad habitasse pulvinar sodales potenti aliquam taciti inceptos arcu enim, natoque ut vulputate quisque parturient feugiat ac felis consequat.</p>
-
-        <p style="text-align: right"> Malesuada nulla nostra laoreet lacinia feugiat dictum fames, vivamus ut consequat primis nunc justo hendrerit, orci rutrum accumsan aliquet scelerisque sollicitudin. Auctor ac potenti porta mauris hendrerit phasellus nisi justo habitasse eget litora per penatibus mollis, massa imperdiet vehicula erat tempus venenatis aliquet posuere fringilla tortor rutrum leo. Tincidunt nam tempus neque vitae semper facilisis porta malesuada feugiat, morbi torquent dui viverra mattis tempor class potenti pulvinar, primis facilisi sociis pharetra nibh volutpat dictum urna. Placerat proin viverra euismod habitasse turpis nisi justo iaculis rhoncus, convallis sagittis pharetra vel mattis mus vestibulum ridiculus nibh fusce, quis eleifend fermentum nulla nascetur sapien platea dapibus. Semper nostra rutrum aliquam litora suscipit bibendum libero aenean quis torquent dis iaculis habitasse cursus molestie, orci auctor erat nascetur tristique sodales magnis scelerisque vel congue blandit vehicula praesent quisque.</p>
-
-        <p style="text-align: center"> Ullamcorper sociosqu nunc lacinia platea aliquet eu metus montes ante dignissim bibendum facilisis rhoncus enim non sodales, lobortis cursus ridiculus cras conubia facilisi velit maecenas diam pulvinar nec et quisque quam proin. In malesuada cubilia cursus eget ante mollis ut, sed purus auctor suscipit pharetra magna nibh, quisque arcu donec neque class augue. Dictumst tellus pellentesque dictum leo accumsan eleifend sagittis auctor metus, natoque parturient enim mollis pharetra facilisi nunc torquent mus, curae vivamus lobortis porttitor gravida class felis massa.</p>
-        <br>
-        <br>
-        <p>Última línea </p>
+            </article>
+        </section>
+        <footer id="piepagina">Derechos reservados &COPY; 2022<address style="display: inline">Tel 87946544</address></footer>
     </body>
 </html>
