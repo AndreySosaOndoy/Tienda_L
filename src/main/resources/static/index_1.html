@@ -6,23 +6,21 @@
         <meta charset="UTF-8">
         <meta name="description" content="Está pagina contiene etiquetas del tipo html5 y luego enlces o defincion de estilos css3">
         <meta name="Keywords" content="html5 ,css3 , web, fidélitas ">
-        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <header class="header">  <!-- Etiqueta para ofrecerle al browser info de que es un encabezado -->
-            <nav class="nav"> <!-- esta etiqueta es para ilustrarle al browser que posiblemente es un menú -->
-                <a href="index.html" class="logo nav-link">TechShop</a>
-                <ul class="nav-menu">
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ejemplo9.html">&LeftTriangleBar;</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ejemplo2.html">&RightTriangleBar;</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Audios.html">Audios</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Videos.html">Videos</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="iframes.html">iframes</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="formularios.html">Formularios</a></li>
-                </ul>
-            </nav>
+        <header id="encabezado">  <!-- Etiqueta para ofrecerle al browser info de que es un encabezado -->
+            <h1>TechShop</h1>
         </header>
-        
+        <nav id="menu"> <!-- esta etiqueta es para ilustrarle al browser que posiblemente es un menú -->
+            <a href="ejemplo9.html">Back</a>|
+            <a href="index_1.html">Home</a>|
+            <a href="ejemplo2.html">Next</a><br>
+        </nav>
+        <aside id="barralateral"> <!-- Etiqueta para indicar que es una barra lateral al final, puede ser a la izquierda o a la derecha, y pueden ser varias  -->
+            <h2> Producto más vendido" </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices pulvinar in, non elementum parturient senectus est libero commodo velit hendrerit, erat varius nisl sodales aenean aliquam per placerat netus. Tristique cras blandit mattis hendrerit etiam sociosqu platea imperdiet, dapibus donec ut massa eros morbi vulputate sollicitudin, rutrum fringilla lectus fames erat tortor orci. Vel congue vehicula curae massa auctor natoque semper lobortis, condimentum blandit interdum taciti molestie lectus platea elementum id, ad pulvinar est diam leo cum montes.</p>
+        </aside>
         <section id="contenido">
             <h2>Articulos principales</h2>
             <article>
@@ -51,9 +49,9 @@
                     <figcaption>Más económico</figcaption>
                 </figure>
             </article>
-            <article>
+              <article>
                 <header>Resumen de lineas generales</header>
-
+                  
                 <table border="1">
                     <thead>
                         <tr id="encabezadoTabla">
@@ -70,7 +68,7 @@
                             <td>2</td>
                             <td>eu metus montes ante dignissim bibendum facilisis</td>
                         </tr>
-                        <tr>
+                            <tr>
                             <td>3</td>
                             <td>rhoncus enim non sodales, lobortis cursus</td>
                         </tr>
@@ -78,7 +76,7 @@
                             <td>4</td>
                             <td> ridiculus cras conubia facilisi velit</td>
                         </tr>
-                        <tr>
+                            <tr>
                             <td>5</td>
                             <td>maecenas diam pulvinar nec et quisque quam proin.</td>
                         </tr>
