@@ -10,16 +10,15 @@ import lombok.Data;
 public class Cliente implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-   
-    
+
     private Long idCliente;//Hibernate lo convierte en id_cliente
-    String nombre;
-    String apellidos;
-    String correo;
-    String telefono;
+    private String nombre;
+    private String apellidos;
+    private String correo;
+    private String telefono;
 
     public Cliente() {
     }
